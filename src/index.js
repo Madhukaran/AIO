@@ -3,8 +3,6 @@ const path = require('path')
 
 function createWindow () {
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
     autoHideMenuBar: true,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
@@ -13,6 +11,12 @@ function createWindow () {
   nativeTheme.themeSource = 'dark'
 
   win.loadFile(path.join(__dirname, '/pages/login.html'))
+
+  ipcMain.handle('/login', () => {
+    win.loadFile(path.join(__dirname, '/pages/homepage.html'))
+    return true
+  })
+
 }
 
 app.whenReady().then(() => {

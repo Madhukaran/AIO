@@ -2,29 +2,59 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>AIO</title>
+    <title>FIST</title>
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
     <link rel="stylesheet" href="../static/css/bootstrap.css">
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div class="d-flex w-100 h-100 justify-content-center">
-        <div class="login-form">
+    <div class="d-flex justify-content-center">
+        <div class="login-form flex-column">
+            <div class="d-flex m-1 p-1 flex-column">
+                <img src="../static/images/fist_logo_500_250.jpg" alt="fist_logo_500_250" class="fist_logo_500_250">
+            </div>
             <div class="d-flex m-1 p-1 flex-column">
                 <input type="text" class="form-control" placeholder="Username" id="username">
             </div>
             <div class="d-flex m-1 p-1 flex-column">
                 <input type="password" class="form-control" placeholder="Password" id="password">
             </div>
-            <div class="d-flex m-1 p-1">
-                <button type="submit" class="btn btn-primary">login</button>
+            <div id="login_error_message" class="d-flex m-1 p-1 flex-column">
+                <small class="d-flex mx-auto text-danger">&#x26A0;&nbsp;Invalid Credentials!</small>
             </div>
             <div class="d-flex m-1 p-1">
-                <a href="#">
+                <button type="submit" id="login-button" class="btn btn-primary">login</button>
+            </div>
+            <div class="d-flex">
+                <a href="#" class="mx-auto">
                     <small>Forgot Password ?</small>
+                </a>
+            </div>
+            <div class="d-flex">
+                <a href="#" class="mx-auto">
+                    <small>Sign Up</small>
                 </a>
             </div>
         </div>
     </div>
+    <div class="d-flex fixed-bottom bg-dark text-white justify-content-center">
+        <div class="d-flex">
+            <small>&copy; Copyright 2019&nbsp;</small>
+            <small>|&nbsp;All Rights Reserved</small>
+        </div>
+    </div>
+    <!-- <div class="d-flex fixed-bottom flex-column">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2021 Fist Company, Inc</p>
+          </footer>
+    </div> -->
+    <script src="../renderer.js"></script>
 </body>
 </html>
