@@ -1,17 +1,8 @@
-body {
-    background-color: black;
-}
- 
 .login-form {
     width: 350px !important;
+    margin-top: 300px;
 }
 
-.form-control {
-    background-color: rgb(59, 57, 57);
-    border: none;
-    border-bottom: 1px solid #fff;
-    border-radius: 0;
-    box-shadow: none;
-    color: #fff;
-    text-shadow: none;
+body {
+    background-color: #fff;
 }
