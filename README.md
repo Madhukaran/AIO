@@ -1,3 +1,5 @@
 ![Fist_logo](https://raw.githubusercontent.com/Madhukaran/AIO/main/src/static/images/fist_logo_500_250.jpg)
 
 Fist is a Digital Marketing and Social hub application where it allows users to manage the multiple social media applications in single place. It helps to save much more time for users to create the same post across different social applications. It allows the better integrity between the different social application which makes you to share the content's, MEME's, Pic's, videos from either of the linked Social Platform of the user. This Application can be useful for the Content creators and Business Peoples Who have a large Social Followers/Audience to Cover or to do the E-marketing by selling products and etc.,
+
+![Status Report](https://camo.githubusercontent.com/867b1f9c69f1b74cc4789c0a0a45bda0c5bfd0460481f5c5c00433fba3f2236d/68747470733a2f2f7265706f62656174732e6178696f6d2e636f2f6170692f656d6265642f383636653861313331343436626465376537363937313938353265633334393061613362363265612e737667)
