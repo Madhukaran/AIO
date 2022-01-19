@@ -3,7 +3,7 @@ const path = require('path')
 
 function createWindow () {
   const win = new BrowserWindow({
-    autoHideMenuBar: true,
+    autoHideMenuBar: false,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
@@ -14,6 +14,11 @@ function createWindow () {
 
   ipcMain.handle('/login', () => {
     win.loadFile(path.join(__dirname, '/pages/homepage.html'))
+    return true
+  })
+
+  ipcMain.handle('/signUp', () => {
+    win.loadFile(path.join(__dirname, '/pages/signup.html'))
     return true
   })
 
