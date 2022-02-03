@@ -1,9 +1,16 @@
+'use strict';
 const { app, BrowserWindow, nativeTheme, ipcMain } = require('electron')
 const path = require('path')
 
+require('electron-reload')(__dirname, {
+  electron: path.join(__dirname, 'node_modules','src')
+});
+
 function createWindow () {
   const win = new BrowserWindow({
-    autoHideMenuBar: false,
+    autoHideMenuBar: true,
+    width:1366,
+    height:768,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
